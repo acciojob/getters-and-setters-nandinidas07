@@ -9,24 +9,23 @@ class Person {
     return this._name;
   }
 
-  set age(age) {
-    this._age = age;
-  }
-
   get age() {
     return this._age;
   }
+	set age(newAge){
+		this._age=newAge;
+	}
 }
 
 class Student extends Person {
   study() {
-    console.log(${this.name} is studying);
+    console.log(`${this.name} is studying`);
   }
 }
 
 class Teacher extends Person {
   teach() {
-    console.log(${this.name} is teaching);
+    console.log(`${this.name} is teaching`);
   }
 }
 
